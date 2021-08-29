@@ -1,0 +1,29 @@
+@media screen and (max-width: 479px) {
+  .qualities {
+    padding: 60px;
+
+    &__list {
+      flex-wrap: wrap;
+    }
+
+    &__item {
+      padding: 0 15px;
+    }
+
+    &__item:not(:last-child) {
+      padding: 0 15px;
+    }
+
+    &__div-antenna,
+    &__div-clock,
+    &__div-diagram,
+    &__div-astronaut {
+      padding: 25px 192px;
+      margin-bottom: 30px;
+    }
+
+    &__hdr {
+      text-align: center;
+    }
+  }
+}

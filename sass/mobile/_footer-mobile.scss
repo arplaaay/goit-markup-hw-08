@@ -1,0 +1,34 @@
+@media screen and (max-width: 479px) {
+  .ftr-contacts {
+    flex-wrap: wrap;
+    justify-content: center;
+
+    &__logotype {
+      text-align: center;
+    }
+  }
+
+  .address {
+    &__list {
+      margin-bottom: 60px;
+    }
+
+    &__item {
+      text-align: center;
+    }
+  }
+
+  .ftr-social {
+    &__hdr {
+      text-align: center;
+    }
+
+    &__list {
+      margin-bottom: 60px;
+    }
+  }
+
+  .subscribe-div {
+    flex-wrap: wrap;
+  }
+}

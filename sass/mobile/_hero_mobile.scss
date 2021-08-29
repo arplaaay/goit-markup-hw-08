@@ -1,0 +1,10 @@
+@media screen and (max-width: 479px) {
+  .hero {
+    width: 479px;
+    background-size: cover;
+
+    &__title {
+      text-align: center;
+    }
+  }
+}

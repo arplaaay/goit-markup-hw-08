@@ -1,0 +1,59 @@
+@media screen and (min-width: 320px) and (max-width: 480px) {
+  .container {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 479px) {
+  .page-header {
+    border: none;
+  }
+
+  .contacts {
+    display: none;
+  }
+
+  .navigation {
+    width: 100%;
+    height: 60px;
+
+    padding: 10px 15px;
+
+    &__list {
+      display: none;
+    }
+  }
+
+  .navigation__mobile-button {
+    margin-left: auto;
+    background-color: $bg-primary-color;
+
+    border-style: none;
+  }
+
+  .hero {
+    width: 100%;
+    padding: 0;
+    position: relative;
+
+    &__title {
+      font-size: 26px;
+      line-height: 1.61;
+      text-align: center;
+    }
+
+    &__mobile {
+      width: 100%;
+      height: 400px;
+      background-size: contain;
+    }
+
+    &__div {
+      position: absolute;
+
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+  }
+}

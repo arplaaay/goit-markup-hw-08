@@ -1,55 +1,57 @@
-.qualities {
-  padding-top: 94px;
+@media screen and (min-width: 1200px) {
+  .qualities {
+    padding-top: 94px;
 
-  &__hdr {
-    font-weight: bold;
-    font-size: 14px;
-    line-height: 1.14;
-    letter-spacing: 0.03em;
-    text-transform: uppercase;
-    color: $title-text-color;
+    &__hdr {
+      font-weight: bold;
+      font-size: 14px;
+      line-height: 1.14;
+      letter-spacing: 0.03em;
+      text-transform: uppercase;
+      color: $title-text-color;
+    }
+
+    &__dscrpt {
+      font-size: 14px;
+      line-height: 1.7;
+      letter-spacing: 0.03em;
+      color: $text-color;
+
+      margin-top: 10px;
+    }
   }
 
-  &__dscrpt {
-    font-size: 14px;
-    line-height: 1.7;
-    letter-spacing: 0.03em;
-    color: $text-color;
+  .qualities__list {
+    display: flex;
 
-    margin-top: 10px;
-  }
-}
+    & .qualities__item:not(:last-child) {
+      margin-right: 30px;
+    }
 
-.qualities__list {
-  display: flex;
-
-  & .qualities__item:not(:last-child) {
-    margin-right: 30px;
+    & .qualities__item {
+      flex-basis: 270px;
+    }
   }
 
-  & .qualities__item {
-    flex-basis: 270px;
-  }
-}
+  .qualities {
+    &__antenna,
+    &__clock,
+    &__diagram,
+    &__astronaut {
+      width: 70px;
+      height: 70px;
+    }
 
-.qualities {
-  &__antenna,
-  &__clock,
-  &__diagram,
-  &__astronaut {
-    width: 70px;
-    height: 70px;
-  }
+    &__div-antenna,
+    &__div-clock,
+    &__div-diagram,
+    &__div-astronaut {
+      background: $bg-secondary-color;
 
-  &__div-antenna,
-  &__div-clock,
-  &__div-diagram,
-  &__div-astronaut {
-    background: $bg-secondary-color;
+      border-radius: 4px;
 
-    border-radius: 4px;
-
-    padding: 25px 100px;
-    margin-bottom: 30px;
+      padding: 25px 100px;
+      margin-bottom: 30px;
+    }
   }
 }

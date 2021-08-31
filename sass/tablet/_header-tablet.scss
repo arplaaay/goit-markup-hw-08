@@ -1,7 +1,9 @@
-@media screen and (min-width: 767px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .page-header {
+    width: 100%;
+
     background: var(--bg-primary-color);
-    // border: 1px solid #ececec;
+    border-bottom: 1px solid $header-border;
   }
 
   .main-nav-div {
@@ -27,8 +29,6 @@
     line-height: 1.19;
     letter-spacing: 0.03em;
 
-    border-bottom: 1px solid $header-border;
-
     &__logo-web {
       color: $extra-color;
     }
@@ -40,11 +40,6 @@
     &__list {
       display: flex;
       margin-left: 88px;
-
-      font-weight: 500;
-      font-size: 14px;
-      line-height: 1.14;
-      letter-spacing: 0.02em;
     }
 
     &__item:not(:last-child) {
@@ -72,7 +67,7 @@
 
       width: 100%;
       height: 4px;
-      bottom: -34px;
+      bottom: -30px;
       left: 0;
 
       border-radius: 2px;
@@ -94,6 +89,7 @@
 
   .contacts {
     &__link {
+      display: flex;
       font-weight: 500;
       font-size: 12px;
       line-height: 1.16;
@@ -111,14 +107,22 @@
       }
     }
 
+    &__item {
+      margin-top: 8px;
+    }
+
     &__envelope {
       width: 14px;
       height: 10px;
+
+      margin-right: 8px;
     }
 
     &__smartphone {
       width: 10px;
       height: 14px;
+
+      margin-right: 8px;
     }
   }
 }

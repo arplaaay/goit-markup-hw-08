@@ -30,11 +30,6 @@
 
     border-radius: 4px;
 
-    @media screen and (max-width: 479px) {
-      width: 450px;
-      height: 609px;
-    }
-
     &__btn {
       position: absolute;
       top: 8px;
@@ -162,11 +157,6 @@
       line-height: 1.71;
       letter-spacing: 0.03em;
       color: $text-color;
-
-      @media screen and (max-width: 479px) {
-        font-size: 12px;
-        line-height: 1.16;
-      }
     }
   }
 
@@ -189,10 +179,6 @@
       height: 1px;
 
       background-color: $extra-color;
-
-      @media screen and (max-width: 479px) {
-        bottom: 1px;
-      }
     }
   }
 

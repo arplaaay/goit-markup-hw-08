@@ -4,8 +4,10 @@
   }
 
   .page-header {
-    background: $bg-primary-color;
-    border: 1px solid $header-border;
+    width: 100%;
+
+    background: var(--bg-primary-color);
+    border-bottom: 1px solid $header-border;
   }
 
   .navigation__mobile-button {

@@ -1,4 +1,4 @@
-@media screen and (max-width: 479px) {
+@media screen and (max-width: 767px) {
   .clients {
     padding-top: 60px;
     padding-bottom: 60px;
@@ -44,9 +44,9 @@
     }
 
     &__list .clients__item {
-      flex-basis: calc(100% / 3 - 30px);
+      flex-basis: calc(100% / 2 - 30px);
 
-      margin-left: 30px;
+      margin-left: 25px;
       margin-top: 30px;
 
       width: 210px;

@@ -81,8 +81,6 @@
     <main>
       <!-- Герой -->
       <section class="hero">
-        <img src="./images/mobile_hero@1x.jpg" alt="Люди работают" class="hero__mobile" />
-        <img src="./images/tablet_hero@1x.jpg" alt="Люди работают" class="hero__tablet" />
         <div class="hero__div container">
           <h1 class="hero__title">
             Эффективные решения <br />
@@ -207,12 +205,27 @@
 
           <ul class="team__list list-decor">
             <li class="team__item">
-              <img
-                src="./images/person1.jpg"
-                class="team__img"
-                alt="Игорь Демьяненко"
-                width="270"
-              />
+              <picture>
+                <source
+                  srcset="./images/person1-mobile@1x.jpg 1x, ./images/person1-mobile@2x.jpg 2x"
+                  media="(max-width: 767px)"
+                  type="image/jpeg"
+                />
+
+                <source
+                  srcset="./images/person1.jpg 1x, ./images/person1@2x.jpg 2x"
+                  media="(min-width: 1200px)"
+                  type="image/jpeg"
+                />
+
+                <source
+                  srcset="./images/person1-tablet@1x.jpg 1x, ./images/person1-tablet@2x.jpg 2x"
+                  media="(min-width: 768px)"
+                  type="image/jpeg"
+                />
+
+                <img src="./images/person1.jpg" alt="Игорь Демьяненко" />
+              </picture>
               <div class="team__item-wrapper">
                 <h3 class="team__person-hdr">Игорь Демьяненко</h3>
 
@@ -255,7 +268,27 @@
             </li>
 
             <li class="team__item">
-              <img src="./images/person2.jpg" class="team__img" alt="Ольга Репина" width="270" />
+              <picture>
+                <source
+                  srcset="./images/person2-mobile@1x.jpg 1x, ./images/person2-mobile@2x.jpg 2x"
+                  media="(max-width: 767px)"
+                  type="image/jpeg"
+                />
+
+                <source
+                  srcset="./images/person2.jpg 1x, ./images/person2@2x.jpg 2x"
+                  media="(min-width: 1200px)"
+                  type="image/jpeg"
+                />
+
+                <source
+                  srcset="./images/person2-tablet@1x.jpg 1x, ./images/person2-tablet@2x.jpg 2x"
+                  media="(min-width: 768px)"
+                  type="image/jpeg"
+                />
+
+                <img src="./images/person2.jpg" alt="Ольга Репина" />
+              </picture>
               <div class="team__item-wrapper">
                 <h3 class="team__person-hdr">Ольга Репина</h3>
 
@@ -298,7 +331,27 @@
             </li>
 
             <li class="team__item">
-              <img src="./images/person3.jpg" class="team__img" alt="Николай Тарасов" width="270" />
+              <picture>
+                <source
+                  srcset="./images/person3-mobile@1x.jpg 1x, ./images/person3-mobile@2x.jpg 2x"
+                  media="(max-width: 767px)"
+                  type="image/jpeg"
+                />
+
+                <source
+                  srcset="./images/person3.jpg 1x, ./images/person3@2x.jpg 2x"
+                  media="(min-width: 1200px)"
+                  type="image/jpeg"
+                />
+
+                <source
+                  srcset="./images/person3-tablet@1x.jpg 1x, ./images/person3-tablet@2x.jpg 2x"
+                  media="(min-width: 768px)"
+                  type="image/jpeg"
+                />
+
+                <img src="./images/person3.jpg" alt="Николай Тарасов" />
+              </picture>
               <div class="team__item-wrapper">
                 <h3 class="team__person-hdr">Николай Тарасов</h3>
 
@@ -341,7 +394,27 @@
             </li>
 
             <li class="team__item">
-              <img src="./images/person4.jpg" class="team__img" alt="Михаил Ермаков" width="270" />
+              <picture>
+                <source
+                  srcset="./images/person4-mobile@1x.jpg 1x, ./images/person4-mobile@2x.jpg 2x"
+                  media="(max-width: 767px)"
+                  type="image/jpeg"
+                />
+
+                <source
+                  srcset="./images/person4.jpg 1x, ./images/person4@2x.jpg 2x"
+                  media="(min-width: 1200px)"
+                  type="image/jpeg"
+                />
+
+                <source
+                  srcset="./images/person4-tablet@1x.jpg 1x, ./images/person4-tablet@2x.jpg 2x"
+                  media="(min-width: 768px)"
+                  type="image/jpeg"
+                />
+
+                <img src="./images/person4.jpg" alt="Николай Тарасов" />
+              </picture>
               <div class="team__item-wrapper">
                 <h3 class="team__person-hdr">Михаил Ермаков</h3>
 
